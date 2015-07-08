@@ -2,4 +2,4 @@
 
 set -e
 
-sudo docker load -i /tmp/middleman_docker_image.tar.gz
+docker load -i /tmp/middleman_docker_image.tar.gz
