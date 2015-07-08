@@ -32,13 +32,12 @@ deployment:
   aws:
     branch: master
     codedeploy:
-      middleman:
+      CodeDeployMiddleman:
         application_root: /
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: andyshinn-middleman
-            key_pattern: middleman-{SHORT_COMMIT}-{BUILD_NUM}.tar.gz
-        region: us-west-2
-        deployment_group: middleman
-        deployment_config: CodeDeployDefault.OneAtATime
+            bucket: codedeploymiddleman-bucket-neilni
+            key_pattern: codedeploymiddleman-bucket-neilni-{BRANCH}-{SHORT_COMMIT}
+        region: us-east-1
+        deployment_group: codedeploymiddleman-gp
