@@ -32,7 +32,7 @@ deployment:
   aws:
     branch: master
     codedeploy:
-      CodeDeployMiddleman:
+      codedeploymiddleman:
         application_root: /
         revision_location:
           revision_type: S3
